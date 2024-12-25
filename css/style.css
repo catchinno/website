@@ -1,0 +1,282 @@
+:root{
+    --background-color: #0000;
+    --border-color: linear-gradient(to bottom right, red, blue);
+    --border-width: 0.25em;
+    --edge-size: 0.5em;
+}
+/* ******************************* color changer part ******************************* */
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  .b-example-divider {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+
+  .b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+  }
+
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+  .nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+  }
+
+  .nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .btn-bd-primary {
+    --bd-violet-bg: #712cf9;
+    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-violet-bg);
+    --bs-btn-border-color: var(--bd-violet-bg);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #6528e0;
+    --bs-btn-hover-border-color: #6528e0;
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #5a23c8;
+    --bs-btn-active-border-color: #5a23c8;
+  }
+
+  .bd-mode-toggle {
+    z-index: 1500;
+  }
+
+  .bd-mode-toggle .dropdown-menu .active .bi {
+    display: block !important;
+  }
+
+/* ******************************* color changer part ******************************* */
+
+/* ******************************* box border clipped ******************************* */
+.border-future {
+  --background-color: #000a;
+  --border-color: linear-gradient(to right, hsl(294.25deg 59.84% 47.84%), hsl(352.29deg 93.16% 54.12%));
+  --border-width: 0.25em;
+  --edge-size: 2.5em;
+
+  cursor: pointer;
+  background: var(--background-color);
+  padding: 0.5em 1.5em;
+  border: 0;
+  position: relative;
+  isolation: isolate;
+  place-content: center;
+  clip-path: polygon(
+    var(--edge-size) 0%,
+    100% 0,
+    100% calc(100% - var(--edge-size)),
+    calc(100% - var(--edge-size)) 100%,
+    0 100%,
+    0% var(--edge-size)
+  );
+  color:#999;
+  transition: color 250ms;
+  /* animation: shadow 2s infinite; */
+
+}
+
+.border-future::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--border-color);
+  z-index: -2;
+  /* animation: shadow 2s infinite; */
+
+}
+
+.border-future::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--background-color);
+  z-index: -1;
+  clip-path: polygon(
+    /* // top left 1 */
+    var(--border-width) calc(var(--edge-size) + var(--border-width) * 0.5),
+    /* // top left 2 */
+    calc(var(--edge-size) + var(--border-width) * 0.5) var(--border-width),
+    /* // top right */
+    calc(100% - var(--border-width)) var(--border-width),
+    /* //bottom right - 1 */
+    calc(100% - var(--border-width))
+      calc(100% - calc(var(--edge-size) + var(--border-width) * 0.5)),
+    /* // bottom right - 2 */
+    calc(100% - calc(var(--edge-size) + var(--border-width) * 0.5))
+      calc(100% - var(--border-width)),
+    /* // bottom left */
+    calc(var(--border-width)) calc(100% - var(--border-width))
+  );
+  transition: clip-path 500ms;  
+
+}
+
+.border-future:hover {
+  color: white;
+
+}
+.main-minue{
+    /* animation: shadow 2s infinite; */
+    /* box-shadow: 0 0px 0px 0  hsl(294.25deg 59.84% 47.84%), 0 6px 20px 0 hsl(352.29deg 93.16% 54.12%); */
+    filter: drop-shadow(1px 6px 20px  hsl(294.25deg 59.84% 47.84%) ) ;
+}
+.main-minue:hover{
+     animation: shadow 2s ease-in-out infinite; 
+}
+@keyframes shadow {
+    0% {
+        /* box-shadow: 0 0px 0px 0  hsl(294.25deg 59.84% 47.84%), 0 6px 20px 0 hsl(352.29deg 93.16% 54.12%); */
+        filter: drop-shadow(1px 6px 20px  hsl(294.25deg 59.84% 47.84%) ) ;
+    }
+    50% {
+        /* box-shadow: 0 4px 8px 0  hsl(294.25deg 59.84% 47.84%), 0 6px 20px 0 hsl(352.29deg 93.16% 54.12%);     */
+        filter: drop-shadow(1px 6px 30px  hsl(294.25deg 59.84% 47.84%) ) ;
+    }
+    100% {
+        /* box-shadow: 0 8px 16px 0  hsl(294.25deg 59.84% 47.84%), 0 6px 20px 0 hsl(352.29deg 93.16% 54.12%);     */
+        filter: drop-shadow(1px 6px 20px  hsl(294.25deg 59.84% 47.84%) ) ;  
+    }
+}
+/* ******************************* box border clipped ******************************* */
+
+/* ******************************* cube animation box ******************************* */
+
+#wrapper {
+  padding-top: 10%; }
+
+.viewport {
+  perspective: 800px;
+  perspective-origin: 50% 400px;
+  transform: scale(0.8, 0.8);
+  /* -webkit-box-reflect: below 170px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0%, transparent), to(rgba(250, 250, 250, 0.1))); */
+ }
+
+.cube {
+  position: relative;
+  margin: 0 auto;
+  height: 400px;
+  width: 400px;
+  transform-style: preserve-3d;
+  transform: rotateX(136deg) rotateY(1122deg);
+}
+
+.cube > div {
+  overflow: hidden;
+  position: absolute;
+  opacity: 0.9;
+  height: 400px;
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.75);
+  outline-color: hsl(0 0 13%);
+  outline-style: solid;
+  -webkit-touch-callout: none;
+  -moz-touch-callout: none;
+  -ms-touch-callout: none;
+  -o-touch-callout: none;
+  touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none; 
+}
+
+.cube > div > div.cube-image {
+  width: 400px;
+  height: 400px;
+  transform: rotate(180deg);
+  line-height: 400px;
+  font-size: 80px;
+  text-align: center;
+  color: #fff;
+  transition: color 600ms; 
+}
+  
+.cube > div > div.cube-image.active {
+  color: #ff0fef; 
+}
+
+.cube > div:hover {
+  cursor: pointer; 
+}
+
+.cube > div:active {
+  cursor: pointer; 
+}
+
+.cube > div:first-child {
+  transform: rotateX(90deg) translateZ(200px); 
+}
+
+.cube > div:nth-child(2) {
+  transform: translateZ(200px); 
+}
+
+.cube > div:nth-child(3) {
+  transform: rotateY(90deg) translateZ(200px); 
+}
+
+.cube > div:nth-child(4) {
+  transform: rotateY(180deg) translateZ(200px); 
+}
+
+.cube > div:nth-child(5) {
+  transform: rotateY(-90deg) translateZ(200px); 
+}
+
+.cube > div:nth-child(6) {
+  transform: rotateX(-90deg) rotate(180deg) translateZ(200px); 
+}
+
+object {
+  opacity: 0.5; 
+}
+
+object:hover {
+  opacity: 1; 
+}
+
+@media (max-width: 640px) {
+  .viewport {
+    transform: scale(0.6, 0.6); 
+  } 
+}
+/* ******************************* cube animation box ******************************* */
+
