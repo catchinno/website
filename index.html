@@ -36,31 +36,31 @@
         <div class="viewport">
           <div class="cube">
             <div class="side">
-                <div class="cube-image">
-                    <a href="#">home</a>
+                <div class="cube-image" data-bs-toggle="modal" data-bs-target="#homeModal">
+                    <a href="#" >home</a>
                 </div>
             </div>
             <div class="side">
-                <div class="cube-image">
+                <div class="cube-image" data-bs-toggle="modal" data-bs-target="#aboutModal">
                     <a href="#">about</a>
                 </div>
             </div>
             <div class="side">
-                <div class="cube-image">
+                <div class="cube-image" data-bs-toggle="modal" data-bs-target="#contactUsModal">
                     <a href="#">contact us</a>
                 </div>
             </div>
             <div class="side">
-                <div class="cube-image">
+                <div class="cube-image" data-bs-toggle="modal" data-bs-target="#galleryModal">
                    <a href="#">gallery</a> 
                 </div>
             </div>
             <div class="side">
-                <div class="cube-image">
+                <div class="cube-image" data-bs-toggle="modal" data-bs-target="#gamesModal">
                     <a href="#">games</a>
                 </div>
             </div>
-            <div class="side">
+            <div class="side" data-bs-toggle="modal" data-bs-target="#socialModal">
                 <div class="cube-image active">
                     <a href="#">social media</a>
                 </div>
@@ -68,6 +68,113 @@
           </div>
         </div>
     </div>
+
+    <!-- ******************************* Modals ******************************* -->
+    <div class="modal fade" id="homeModal" tabindex="-1" aria-labelledby="homeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content bg-trans">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="main-minue">
+                        <div class="border-future p-5">
+                            <img src="images/catchino2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ********************************************************************************************* -->
+    <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content bg-trans">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="main-minue">
+                        <div class="border-future p-5">
+                            Catchinno means to "laugh" in Latin. Buy our card games, or ask about our Gaming Partner Options in Events. Enjoy!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ********************************************************************************************* -->
+    <div class="modal fade" id="contactUsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content bg-trans">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="main-minue">
+                        <div class="border-future p-5">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">name</label>
+                                    <input type="text" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                </div>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                    <label for="floatingTextarea2">Comments</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary my-3">Submit</button>
+                              </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ********************************************************************************************* -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content bg-trans">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="main-minue">
+                        <div class="border-future p-5">
+                            hello from div
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ********************************************************************************************* -->
+    <div class="modal fade" id="gamesModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content bg-trans">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="main-minue">
+                        <div class="border-future p-5">
+                            hello from div
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ********************************************************************************************* -->
+    <div class="modal fade" id="socialModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content bg-trans">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="main-minue">
+                        <div class="border-future p-5">
+                            hello from div
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ******************************* Modals ******************************* -->
 
     <div class="container my-5 ">
         <!-- <div class="row justify-content-center text-center">
