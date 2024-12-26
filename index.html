@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="css/css@3.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-xl bg-body-tertiary" aria-label="Seventh navbar example">
+    <!-- <nav class="navbar navbar-expand-xl bg-body-tertiary" aria-label="Seventh navbar example">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img style="width: 100px;" src="images/catchino2.png" alt="" srcset=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleXxl" aria-controls="navbarsExampleXxl" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,56 +32,67 @@
             </ul>
           </div>
         </div>
-    </nav>
-
-    <div id="wrapper">
-        <div class="viewport">
-          <div class="cube">
-            <div class="side">
-                <div class="cube-image" data-bs-toggle="modal" data-bs-target="#homeModal">
-                    <a href="#" >home</a>
-                </div>
+    </nav> -->
+    
+    <div class="container">
+        <div class="row justify-content-lg-center align-items-center my-3 ">
+            <div class="col-lg-2 col-12">
+                <img src="images/catchino2.png" class="w-100" alt="" srcset="">
             </div>
-            <div class="side">
-                <div class="cube-image" data-bs-toggle="modal" data-bs-target="#aboutModal">
-                    <a href="#">about</a>
-                </div>
+            <div class="col-lg-2 col-12">
+                <img src="images/catchino3.png" class="w-100" srcset="">
             </div>
-            <div class="side">
-                <div class="cube-image" data-bs-toggle="modal" data-bs-target="#contactUsModal">
-                    <a href="#">contact us</a>
-                </div>
-            </div>
-            <div class="side">
-                <div class="cube-image" data-bs-toggle="modal" data-bs-target="#galleryModal">
-                   <a href="#">gallery</a> 
-                </div>
-            </div>
-            <div class="side">
-                <div class="cube-image" data-bs-toggle="modal" data-bs-target="#gamesModal">
-                    <a href="#">games</a>
-                </div>
-            </div>
-            <div class="side" data-bs-toggle="modal" data-bs-target="#socialModal">
-                <div class="cube-image active">
-                    <a href="#">social media</a>
-                </div>
-            </div>
-          </div>
         </div>
+
+        <div id="wrapper">
+            <div class="viewport">
+              <div class="cube">
+                <div class="side">
+                    <div class="cube-image" data-bs-toggle="modal" data-bs-target="#homeModal">
+                        <a href="#" >home</a>
+                    </div>
+                </div>
+                <div class="side">
+                    <div class="cube-image" data-bs-toggle="modal" data-bs-target="#aboutModal">
+                        <a href="#">about</a>
+                    </div>
+                </div>
+                <div class="side">
+                    <div class="cube-image" data-bs-toggle="modal" data-bs-target="#contactUsModal">
+                        <a href="#">contact us</a>
+                    </div>
+                </div>
+                <div class="side">
+                    <div class="cube-image" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                       <a href="#">gallery</a> 
+                    </div>
+                </div>
+                <div class="side">
+                    <div class="cube-image" data-bs-toggle="modal" data-bs-target="#gamesModal">
+                        <a href="#">games</a>
+                    </div>
+                </div>
+                <div class="side" data-bs-toggle="modal" data-bs-target="#socialModal">
+                    <div class="cube-image active">
+                        <a href="#">social media</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="row my-5"></div>
+    
     </div>
+
 
     <!-- ******************************* Modals ******************************* -->
     <div class="modal fade" id="homeModal" tabindex="-1" aria-labelledby="homeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content bg-trans">
-                <div class="modal-body">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <div class="main-minue">
-                        <div class="border-future p-5">
-                            <img src="images/catchino2.png" alt="">
-                        </div>
-                    </div>
+            <div class="modal-content bg-trans main-minue no-border text-center">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body border-future p-5">
+                    <img src="images/catchino2.png" alt="">
                 </div>
             </div>
         </div>
@@ -87,14 +100,10 @@
     <!-- ********************************************************************************************* -->
     <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content bg-trans">
-                <div class="modal-body">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <div class="main-minue">
-                        <div class="border-future p-5">
-                            Catchinno means to "laugh" in Latin. Buy our card games, or ask about our Gaming Partner Options in Events. Enjoy!
-                        </div>
-                    </div>
+            <div class="modal-content bg-trans main-minue no-border">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body border-future p-5">
+                    Catchinno means to "laugh" in Latin. Buy our card games, or ask about our Gaming Partner Options in Events. Enjoy!
                 </div>
             </div>
         </div>
@@ -102,29 +111,25 @@
     <!-- ********************************************************************************************* -->
     <div class="modal fade" id="contactUsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content bg-trans">
-                <div class="modal-body">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <div class="main-minue">
-                        <div class="border-future p-5">
-                            <form>
-                                <div class="mb-3">
-                                    <label for="exampleInputPassword1" class="form-label">name</label>
-                                    <input type="text" class="form-control" id="exampleInputPassword1">
-                                </div>
-                                <div class="mb-3">
-                                  <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                                </div>
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                                    <label for="floatingTextarea2">Comments</label>
-                                </div>
-                                <button type="submit" class="btn btn-primary my-3">Submit</button>
-                              </form>
+            <div class="modal-content bg-trans main-minue no-border">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body border-future p-5">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">name</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1">
                         </div>
-                    </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                            <label for="floatingTextarea2">Comments</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block my-3">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -132,14 +137,45 @@
     <!-- ********************************************************************************************* -->
     <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content bg-trans">
-                <div class="modal-body">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <div class="main-minue">
-                        <div class="border-future p-5">
-                            hello from div
+            <div class="modal-content bg-trans main-minue no-border">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body border-future p-5">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <!-- <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div> -->
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="images/1.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/2.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/3.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/4.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/5.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/6.jpg" class="d-block w-100" alt="...">
+                          </div>
                         </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
+                    
                 </div>
             </div>
         </div>
@@ -147,12 +183,12 @@
     <!-- ********************************************************************************************* -->
     <div class="modal fade" id="gamesModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content bg-trans">
-                <div class="modal-body">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <div class="main-minue">
-                        <div class="border-future p-5">
-                            hello from div
+            <div class="modal-content bg-trans main-minue no-border">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>                    
+                <div class="modal-body border-future p-5">
+                    <div class="row">
+                        <div class="col">
+                            <a href="https://www.facebook.com/Catchinno/posts/pfbid0325J3pxvsoGx27bhFzm2uhSkzSdqQGxDxZRy6LKgNEZKBsWBhe37VpJP3iSsCRDk8l"><i class="fa-solid fa-gamepad"></i> Rai7 Rage3</a>
                         </div>
                     </div>
                 </div>
@@ -162,12 +198,18 @@
     <!-- ********************************************************************************************* -->
     <div class="modal fade" id="socialModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content bg-trans">
-                <div class="modal-body">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <div class="main-minue">
-                        <div class="border-future p-5">
-                            hello from div
+            <div class="modal-content bg-trans main-minue no-border">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body border-future p-5">
+                    <div class="row">
+                        <div class="col">
+                            <a href="https://www.facebook.com/Catchinno/"><i class="fa-brands fa-facebook"></i> facebook </a>
+                        </div>
+                        <div class="col">
+                            <a href="https://wa.me/201067072988"><i class="fa-brands fa-whatsapp"></i> whatsapp </a>
+                        </div>
+                        <div class="col">
+                            <a href="https://www.instagram.com/catchinno_/"><i class="fa-brands fa-instagram"></i> instagram </a>
                         </div>
                     </div>
                 </div>
@@ -260,5 +302,6 @@
       <script src="js/style.js"></script>
       <!-- <script src="js/bootstrap.bundle.js"></script> -->
       <!-- <script src="js/bootstrap.esm.js"></script> -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

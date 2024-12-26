@@ -82,6 +82,9 @@
     display: block !important;
   }
 
+  .no-border{
+    border: 0px;
+  }
 /* ******************************* color changer part ******************************* */
 
 /* ******************************* box border clipped ******************************* */
@@ -93,7 +96,7 @@
 
   cursor: pointer;
   background: var(--background-color);
-  padding: 0.5em 1.5em;
+  /* padding: 0.5em 1.5em; */
   border: 0;
   position: relative;
   isolation: isolate;
@@ -156,6 +159,7 @@
     /* animation: shadow 2s infinite; */
     /* box-shadow: 0 0px 0px 0  hsl(294.25deg 59.84% 47.84%), 0 6px 20px 0 hsl(352.29deg 93.16% 54.12%); */
     filter: drop-shadow(1px 6px 20px  hsl(294.25deg 59.84% 47.84%) ) ;
+    transition: all .5s ease-in-out;
 }
 .main-minue:hover{
      animation: shadow 2s ease-in-out infinite; 
@@ -174,6 +178,18 @@
         filter: drop-shadow(1px 6px 20px  hsl(294.25deg 59.84% 47.84%) ) ;  
     }
 }
+.bg-trans{
+  background: #0000;
+}
+.border-future a{
+  color: #aaa;
+  text-decoration: none;
+  transition: all .5s ease-in-out;
+}
+.border-future a:hover{
+  color: #fff;
+}
+
 /* ******************************* box border clipped ******************************* */
 
 /* ******************************* cube animation box ******************************* */
